@@ -1,0 +1,2 @@
+evdev:input:b0003v0B05p19B6*
+  KEYBOARD_KEY_ff31007c=f20 # x11 mic-mute
