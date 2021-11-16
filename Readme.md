@@ -34,7 +34,13 @@ install packages from https://asus-linux.org/
 copy x11 config und xorg.conf.d
 ```
 sudo cp -r xorg.conf.d/* /etc/X11/xorg.conf.d/
+```  
+
+Install mute button   
+```
 sudo cp -r hwdb.d /etc/udev/
+sudo systemd-hwdb update
+sudo udevadm trigger
 ```
 
 3. power and sensors
