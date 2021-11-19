@@ -1,4 +1,4 @@
-# Maintainer: Static_Rocket
+# Maintainer: gdf8gdn8
 
 pkgname=supergfxctl-git
 pkgver=2.0.4.r0.gde464cc
@@ -7,7 +7,7 @@ pkgdesc="Asus laptop gfx ctl"
 arch=('x86_64')
 url="https://gitlab.com/asus-linux/supergfxctl"
 license=('MPL2')
-depends=('libusb' 'udev' 'systemd' 'asusctl-git')
+depends=('libusb' 'udev' 'systemd' )
 optdepends=('acpi_call: fan control')
 makedepends=('git' 'rust')
 provides=('supergfxctl')
