@@ -5,9 +5,12 @@
 > Notable exceptions is fingerprint  
 source: https://github.com/CO-1/asus-flow-x13-linux
 
-Currently missing: support for fingerprint sensor, fan-control
-
-## grub
+**Currently missing:** support for fingerprint sensor, fan-control   
+**Currently issues:**   
+after suspend: 
+- the tlp service not restarts
+- keyboard backlight not restored
+ ## grub
 on archlinux install 
 edit boot config and append to cmdline
 > rd.driver.blacklist=nouveau
@@ -56,7 +59,8 @@ systemctl enable --now amdfand
 supergfxctl - https://gitlab.com/asus-linux/supergfxctl.git
 
 ```sh
-cd supergfxctl
+https://github.com/gdf8gdn8/supergfxctl-git
+cd supergfxctl-git
 makepkg -si
 systemctl enable --now supergfxd
 ```
